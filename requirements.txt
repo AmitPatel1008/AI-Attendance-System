@@ -1,0 +1,24 @@
+# utilities
+numpy
+pandas
+
+# Face Recognition
+scikit-learn
+dlib-bin  # dlib-19.24.1-cp311-cp311-win_amd64.whl
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+
+# Database
+supabase
+bcrypt #hashing to encrypt password
+
+segno # generate QR code
+pillow # to deal with image pre processing
+
+
+streamlit # frontend to deploy the app / web page 
+
+
+
+
+
