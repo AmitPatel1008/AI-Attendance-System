@@ -1,127 +1,121 @@
 import streamlit as st
 
 
+
 def style_background_home():
+
     st.markdown("""
-    <style>
-    .stApp {
-        background: #5865F2 !important;
-        overflow: hidden !important;
-        height: 100vh !important;
-    }
+        <style>
 
-    #MainMenu, footer, header { visibility: hidden; }
+                .stApp {
+                    background: #5865F2 !important;
+                }
 
-    /* No scroll - everything fits in viewport */
-    .block-container {
-        max-width: 780px !important;
-        padding-top: 0.4rem !important;
-        padding-bottom: 0rem !important;
-        overflow: hidden !important;
-    }
-
-    /* Card columns - reduced padding */
-    div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"] {
-        background: #D8DBFF !important;
-        border-radius: 1.4rem !important;
-        padding: 0.8rem 1rem 0.9rem 1rem !important;
-        text-align: left !important;
-    }
-
-    /* Image: shorter height to save space */
-    div[data-testid="stImage"] img {
-        border-radius: 0.7rem !important;
-        display: block !important;
-        margin: 0 auto !important;
-        width: 100% !important;
-        height: 150px !important;
-        object-fit: cover !important;
-    }
-
-    /* Button */
-    div.stButton {
-        display: flex !important;
-        justify-content: center !important;
-        margin-top: 0.4rem !important;
-    }
-    div.stButton > button {
-        background: #5865F2 !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 999px !important;
-        font-weight: 700 !important;
-        padding: 0.45rem 1.4rem !important;
-        width: auto !important;
-        font-size: 0.88rem !important;
-        cursor: pointer !important;
-        transition: background 0.2s ease, transform 0.15s ease !important;
-    }
-    div.stButton > button:hover {
-        background: #4752C4 !important;
-        color: white !important;
-        transform: scale(1.05) !important;
-        border: none !important;
-    }
-    div.stButton > button:active {
-        transform: scale(0.97) !important;
-        background: #3b45b0 !important;
-        color: white !important;
-    }
-    div.stButton > button:focus {
-        box-shadow: none !important;
-        outline: none !important;
-        color: white !important;
-        border: none !important;
-    }
-    div.stButton > button:focus:not(:active) {
-        background: #5865F2 !important;
-        color: white !important;
-    }
-
-    h1 { color: white !important; text-align: center !important; }
-
-    h2 {
-        color: #1a1a1a !important;
-        text-align: left !important;
-        font-size: 1.3rem !important;
-        margin-bottom: 0.3rem !important;
-        margin-top: 0 !important;
-        line-height: 1.0 !important;
-    }
+                .stApp div[data-testid="stColumn"]{
+                    background-color:#E0E3FF !important;
+                    padding:2rem !important;
+                    border-radius: 3rem !important;
+                }
+        
+    
+                /* Equal image size in both cards */
+                .stApp div[data-testid="stColumn"] img {
+                    width: 100% !important;
+                    height: 200px !important;
+                    object-fit: cover !important;
+                    border-radius: 1rem !important;
+                    display: block !important;
+                }
     </style>
     """, unsafe_allow_html=True)
-
+    
 
 def style_background_dashboard():
-    st.markdown("""
-    <style>
-    .stApp { background: #E0E3FF !important; }
-    </style>
-    """, unsafe_allow_html=True)
 
+    st.markdown("""
+        <style>
+
+                .stApp {
+                    background: #E0E3FF !important;
+                }
+
+        </style>  
+
+                """
+            ,unsafe_allow_html=True)
+    
+
+    
 
 def style_base_layout():
+# asdasd
     st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-    h1 {
-        font-family: 'Outfit', sans-serif !important;
-        font-size: 2rem !important;
-        font-weight: 800 !important;
-        line-height: 1.1 !important;
-        margin-top: 0.2rem !important;
-        margin-bottom: 0.6rem !important;
-    }
-    h2 {
-        font-family: 'Outfit', sans-serif !important;
-        font-size: 1.3rem !important;
-        font-weight: 800 !important;
-        margin-bottom: 0.3rem !important;
-        line-height: 1.0 !important;
-    }
-    h3, h4, p {
-        font-family: 'Outfit', sans-serif !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+                
+         /* Hide Top Bar of streamlit */
+                
+            #MainMenu, footer, header {
+                visibility: hidden;
+            }
+                
+            .block-container {
+                padding-top:1.5rem !important;    
+            }
+
+            h1 {
+                font-family: 'Climate Crisis', sans-serif !important;
+                font-size: 3.5rem !important;
+                line-height:1.1 1important;
+                margin-bottom:0rem !important;
+            }
+                
+
+            h2 {
+                font-family: 'Climate Crisis', sans-serif !important;
+                font-size: 2rem !important;
+                line-height:0.9 !important;
+                margin-bottom:0rem !important;
+                color : #111111 !important;
+            }
+                
+            h3, h4, p {
+                font-family: 'Outfit', sans-serif;
+            }
+                
+
+            button{
+                border-radius: 1.5rem !important;
+                background-color: #5865F2 !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
+
+            button[kind="secondary"]{
+                border-radius: 1.5rem !important;
+                background-color: #EB459E !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
+
+            button[kind="tertiary"]{
+                border-radius: 1.5rem !important;
+                background-color: black !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
+
+            button:hover{
+                transform :scale(1.05);}
+        </style>  
+
+                """
+            ,unsafe_allow_html=True)
