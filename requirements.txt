@@ -1,3 +1,7 @@
+
+streamlit # frontend to deploy the app / web page 
+
+
 # utilities
 numpy
 pandas
@@ -15,8 +19,6 @@ bcrypt #hashing to encrypt password
 segno # generate QR codes
 pillow # to deal with image pre processing
 
-
-streamlit # frontend to deploy the app / web page 
 
 librosa
 resemblyzer
