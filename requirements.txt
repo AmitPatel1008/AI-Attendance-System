@@ -1,6 +1,4 @@
-
-streamlit # frontend to deploy the app / web page 
-
+streamlit
 
 # utilities
 numpy
@@ -8,22 +6,18 @@ pandas
 
 # Face Recognition
 scikit-learn
-dlib-bin  # dlib-19.24.1-cp311-cp311-win_amd64.whl
-git+https://github.com/ageitgey/face_recognition_models
+dlib-bin
+face_recognition_models
 setuptools<70.0.0
 
 # Database
 supabase
-bcrypt #hashing to encrypt password
+bcrypt
 
-segno # generate QR codes
-pillow # to deal with image pre processing
+# QR / Image Processing
+segno
+pillow
 
-
+# Voice Recognition
 librosa
 resemblyzer
-
-
-
-
-
