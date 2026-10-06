@@ -1,26 +1,8 @@
-# Environment variables
-.env
-
-# VS Code settings
-.vscode/
-
-# Python cache
+﻿venv311/
+venv/
+.venv/
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-
-# Virtual environments
-venv/
-venv311/
-.venv/
-
-# Streamlit
-.streamlit/
-
-# Build files
-build/
-dist/
-
-# macOS
-.DS_Store
+.env
+.streamlit/secrets.toml
+.vscode/
